@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diff_views_background"
+    tools:context=".recyclerview_and_adapters.activity.RecyclerViewActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHorizontalBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/_10sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glHorizontalEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/_10sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVerticalBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_10sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glVerticalEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/tvMenuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/select_your_order"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+        app:layout_constraintTop_toTopOf="@id/glHorizontalBegin" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenuOfFoodItems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/stroke_button"
+        android:padding="@dimen/_5sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/btnSubmitOrder"
+        app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+        app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+        app:layout_constraintTop_toBottomOf="@+id/tvMenuTitle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/colored_round_button"
+        android:text="@string/submit_order"
+        app:layout_constraintBottom_toBottomOf="@id/glHorizontalEnd"
+        app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+        app:layout_constraintRight_toRightOf="@id/glVerticalEnd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

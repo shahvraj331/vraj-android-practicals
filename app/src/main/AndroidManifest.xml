@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinBasics">
         <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui_layout.FrameLayoutActivity"
             android:exported="false" />
         <activity
@@ -31,13 +39,23 @@
             android:name=".ui_layout.FeedbackFormActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".recyclerview_and_adapters.activity.BottomNavViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview_and_adapters.activity.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview_and_adapters.activity.GridViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview_and_adapters.activity.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview_and_adapters.activity.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview_and_adapters.activity.DifferentViewsHomeScreenActivity"
+            android:exported="true" />
         <activity
             android:name=".ui_widgets.EmployeeDetailsActivity"
             android:exported="false" />

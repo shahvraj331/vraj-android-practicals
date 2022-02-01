@@ -97,4 +97,91 @@
         <item>Better</item>
         <item>Best</item>
     </string-array>
+
+    <string name="listview">ListView</string>
+    <string name="recyclerview">RecyclerView</string>
+    <string name="gridlayout_in_recyclerview">Gridlayout in recyclerview</string>
+    <string name="contacts">Contacts</string>
+    <string name="contact_person_image">Contact person image</string>
+    <string name="add_contact">ADD CONTACT</string>
+    <string name="contact_name">Contact name</string>
+    <string name="contact_number">Contact number</string>
+    <string name="add">ADD</string>
+    <string name="name_validation">Enter proper name</string>
+    <string name="number_validation">Enter proper number</string>
+    <string name="name_exists">Name already exists</string>
+    <string name="number_exists">Number already exists</string>
+    <string name="remove_permission_string">Do you want to remove selected contact?</string>
+    <string name="diff_views">Different views</string>
+    <string name="select_your_order">Select your order</string>
+    <string name="submit_order">Submit order</string>
+    <string name="food_item_logo">food_item_logo</string>
+    <string name="selected_logo">selected logo</string>
+    <string name="select_food">Please select atleast one food item</string>
+    <string name="viewpager">ViewPager</string>
+
+    <string-array name="contact_names">
+        <item>Person 1</item>
+        <item>Person 2</item>
+        <item>Person 3</item>
+        <item>Person 4</item>
+        <item>Person 5</item>
+        <item>Person 6</item>
+        <item>Person 7</item>
+        <item>Person 8</item>
+        <item>Person 9</item>
+        <item>Person 10</item>
+    </string-array>
+
+    <string-array name="contact_numbers">
+        <item>1234567890</item>
+        <item>2345678901</item>
+        <item>3456789012</item>
+        <item>4567890123</item>
+        <item>5678901234</item>
+        <item>6789012345</item>
+        <item>7890123456</item>
+        <item>8901234567</item>
+        <item>9012345678</item>
+        <item>0123456789</item>
+    </string-array>
+
+    <string name="recent_fragment_title">Recent</string>
+    <string name="fav_fragment_title">Favourite</string>
+    <string name="key_id">key%1$d</string>
+    <string name="total_items_in_recent">total items in recent</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="fav_selected">%1$s added to favourites</string>
+    <string name="remove_food_permission">Do you want to remove selected food item from favourites?</string>
+    <string name="clear_recent_list">Clear recent list</string>
+    <string name="clear_fav_list">Clear favourite list</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="my_profile">My Profile</string>
+    <string name="bottom_navigation">Bottom Navigation</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="name_and_first_appearance">%1$s (%2$d)</string>
+    <string name="team">Team: %1$s</string>
+    <string name="created_by">Created by: %1$s</string>
+    <string name="publisher">Publisher: %1$s</string>
+    <string name="details_movie">Details: %1$s</string>
+    <string name="no_items_found">No items found</string>
+    <string name="null_text">NULL</string>
+    <string name="recyclerview_and_adapter">Recyclerview and adapter</string>
+    <string name="bread">Bread</string>
+    <string name="cheese_cake">Cheesecake</string>
+    <string name="chocolate_bar">Chocolate Bar</string>
+    <string name="doughnut">Doughnut</string>
+    <string name="egg">Egg</string>
+    <string name="french_fries">French fries</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="hot_dog">Hot dog</string>
+    <string name="ice_cream_cone">Ice cream cone</string>
+    <string name="ice_cream_sundae">Ice cream sundae</string>
+    <string name="noodles">Noodles</string>
+    <string name="pizza">Pizza</string>
+    <string name="popcorn">Popcorn</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="taco">Taco</string>
+
 </resources>

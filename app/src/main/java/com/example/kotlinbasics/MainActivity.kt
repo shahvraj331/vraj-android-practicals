@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlinbasics.databinding.ActivityMainBinding
+import com.example.kotlinbasics.recyclerview_and_adapters.activity.DifferentViewsHomeScreenActivity
 import com.example.kotlinbasics.ui_widgets.HomeScreenActivity
 import com.example.kotlinbasics.ui_layout.LayoutsActivity
 
@@ -27,6 +28,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnUILayouts.setOnClickListener {
             val uiLayoutsActivity = Intent(this@MainActivity, LayoutsActivity::class.java)
             startActivity(uiLayoutsActivity)
+        }
+
+        binding.btnRecyclerViewAndAdapters.setOnClickListener {
+            val recyclerViewActivity = Intent(this@MainActivity, DifferentViewsHomeScreenActivity::class.java)
+            startActivity(recyclerViewActivity)
         }
     }
 }
