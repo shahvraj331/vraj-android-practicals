@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui_widgets.EmployeeDetailsActivity">
+
+    <TextView
+        android:id="@+id/tvNameOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameOfEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvNameOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvNameOfEmployeeLabel" />
+
+    <TextView
+        android:id="@+id/tvEmailOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameOfEmployee" />
+
+    <TextView
+        android:id="@+id/tvEmailOfEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvEmailOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvEmailOfEmployeeLabel" />
+
+    <TextView
+        android:id="@+id/tvPhoneOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/phone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailOfEmployee" />
+
+    <TextView
+        android:id="@+id/tvPhoneOfEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvPhoneOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvPhoneOfEmployeeLabel" />
+
+    <TextView
+        android:id="@+id/tvGenderOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/gender_label"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneOfEmployee" />
+
+    <TextView
+        android:id="@+id/tvGenderOfEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvGenderOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvGenderOfEmployeeLabel" />
+
+    <TextView
+        android:id="@+id/tvSkillsOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/skills"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderOfEmployee" />
+
+    <TextView
+        android:id="@+id/tvSkillsOfEmployee"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvSkillsOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvSkillsOfEmployeeLabel" />
+
+    <TextView
+        android:id="@+id/tvInternStatusOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/intern_status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSkillsOfEmployee" />
+
+    <TextView
+        android:id="@+id/tvInternStatusOfEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvInternStatusOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvInternStatusOfEmployeeLabel" />
+
+    <TextView
+        android:id="@+id/tvDescriptionOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/description"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInternStatusOfEmployee" />
+
+    <TextView
+        android:id="@+id/tvDescriptionOfEmployee"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvDescriptionOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvDescriptionOfEmployeeLabel" />
+
+    <TextView
+        android:id="@+id/tvSubmitPriorityOfEmployeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/submit_priority"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionOfEmployee" />
+
+    <TextView
+        android:id="@+id/tvSubmitPriorityOfEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:padding="@dimen/_3sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toRightOf="@+id/tvSubmitPriorityOfEmployeeLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvSubmitPriorityOfEmployeeLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
