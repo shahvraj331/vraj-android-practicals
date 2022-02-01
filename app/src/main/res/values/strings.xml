@@ -1,3 +1,99 @@
 <resources>
     <string name="app_name">KotlinBasics</string>
+    <string name="welcome_to_simform">Welcome to Simform</string>
+    <string name="register">Register</string>
+    <string name="simform_logo">Simform_logo</string>
+    <string name="enter_details">Enter details</string>
+    <string name="username">Username</string>
+    <string name="full_name">Enter full name</string>
+    <string name="gender">Gender :</string>
+    <string name="male"> Male</string>
+    <string name="female"> Female</string>
+    <string name="select_appropriate_skills">Select appropriate skills</string>
+    <string name="html">HTML</string>
+    <string name="css">CSS</string>
+    <string name="android">Android</string>
+    <string name="ios">IOS</string>
+    <string name="flutter">Flutter</string>
+    <string name="javascript">JavaScript</string>
+    <string name="internship">Have you gone through any internship?</string>
+    <string name="selected">%1$s selected</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="describe">Describe yourself :</string>
+    <string name="describe_text">Describe yourself</string>
+    <string name="submit_with_high_priority">Submit with high priority?</string>
+    <string name="submit">Submit</string>
+    <string name="ripple_without_border">Ripple Without Border</string>
+    <string name="ripple_with_border">Ripple with border</string>
+    <string name="custom_ripple_with_border">Custom ripple with border</string>
+    <string name="custom_ripple_without_border">Custom ripple without border</string>
+    <string name="submit_toast_text">Form submitted</string>
+    <string name="minimum_skills">You should have atleast 2 skills</string>
+    <string name="describe_limit">Description should have more than 10 characters</string>
+    <string name="dialogTitle">Attention!</string>
+    <string name="dialogMessage">You are submitting with normal priority. \nWould you like to change to High priority?</string>
+    <string name="skills_array">SkillsArray</string>
+    <string name="next_line">\n</string>
+    <string name="details_title">Submitted Details</string>
+    <string name="linear_layout">Linear layout</string>
+    <string name="button">Button</string>
+    <string name="relative_layout">Relative layout</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password">Enter Password</string>
+    <string name="enter_proper_email">Enter proper email!</string>
+    <string name="phone_validation">Phone number not valid</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="password_label">Password:</string>
+    <string name="gender_label">Gender:</string>
+    <string name="skills">Skills:</string>
+    <string name="intern_status">Intern Status:</string>
+    <string name="description">Description:</string>
+    <string name="enter_phone_no">Enter Phone no.</string>
+    <string name="phone">Phone:</string>
+    <string name="comma_space">,\u0020</string>
+    <string name="employee_intern_status_yes">Employee is Interned</string>
+    <string name="employee_intern_status_no">Employee is not Interned</string>
+    <string name="reg_form">Registration Form</string>
+    <string name="empty_text"> </string>
+    <string name="ui_widgets">UI widgets</string>
+    <string name="vraj_android_practicals">Vraj Android Practicals</string>
+    <string name="submit_priority">Submit Priority: </string>
+    <string name="high">High</string>
+    <string name="normal">Normal</string>
+    <string name="enter_your_text_here">Enter your text here</string>
+    <string name="feedback_form">Feedback Form</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="provide_detailed_feedback_here">Provide detailed feedback here</string>
+    <string name="would_you_like_an_email_response">Would you like an email response?</string>
+    <string name="selected_item">%1$s selected  😊</string>
+    <string name="drop_down_logo">drop_down_logo</string>
+    <string name="overall">Overall:</string>
+    <string name="feedback_title">UI Widgets Practical</string>
+    <string name="username_validation">Enter valid name</string>
+    <string name="email_validation">Enter proper email address</string>
+    <string name="spinner_validation">Select proper feedback type</string>
+    <string name="detailed_feedback_validation">Enter detailed feedback</string>
+    <string name="detailed_feedback_limit_validation">Detailed feedback must have atleast 10 characters</string>
+    <string name="ui_layouts">UI Layouts</string>
+    <string name="layouts_activity_title">Different Layouts</string>
+    <string name="constraint_layout">Constraint layout</string>
+    <string name="table_layout">Table layout</string>
+    <string name="frame_layout">Frame layout</string>
+    <string name="overall_feedback_type">Overall feedback type:</string>
+    <string name="detailed_feedback_label">Detailed feedback:</string>
+    <string name="get_email_response">Get email response:</string>
+    <string name="data_activity_title">Submitted feedback details</string>
+
+    <string-array name="feedback_type">
+        <item>Select Feedback Type</item>
+        <item>Okay</item>
+        <item>Average</item>
+        <item>Good</item>
+        <item>Better</item>
+        <item>Best</item>
+    </string-array>
 </resources>

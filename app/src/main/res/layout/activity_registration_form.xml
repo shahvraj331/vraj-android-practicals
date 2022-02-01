@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_widgets.RegistrationFormActivity"
+    android:background="@drawable/home_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tvRegistrationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@android:color/transparent"
+                android:text="@string/enter_details"
+                android:textSize="@dimen/_20ssp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field_background"
+                android:hint="@string/full_name"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@+id/tvRegistrationTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:inputType="text"
+                android:padding="@dimen/_5sdp"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field_background"
+                android:hint="@string/enter_email"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etFullName"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_field_background"
+                android:hint="@string/enter_phone_no"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                app:layout_constraintTop_toBottomOf="@id/etEmail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:inputType="phone"
+                android:importantForAutofill="no" />
+
+            <View
+                android:id="@+id/hlAfterFullName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/horizontal_line"
+                app:layout_constraintTop_toBottomOf="@id/etPhone"/>
+
+            <TextView
+                android:id="@+id/tvGenderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                app:layout_constraintTop_toBottomOf="@+id/hlAfterFullName"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <RadioGroup
+                android:id="@+id/rgGenderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toRightOf="@+id/tvGenderType"
+                app:layout_constraintTop_toTopOf="@+id/tvGenderType"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:checked="true"
+                    android:buttonTint="@color/black"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp"
+                    android:buttonTint="@color/black"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/hlAfterGender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/horizontal_line"
+                app:layout_constraintTop_toBottomOf="@id/rgGenderType"/>
+
+            <TextView
+                android:id="@+id/tvSkillSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_appropriate_skills"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintTop_toBottomOf="@+id/hlAfterGender"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <CheckBox
+                android:id="@+id/cbHTML"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/html"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkillSet"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbCSS"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/css"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toRightOf="@+id/cbHTML"
+                app:layout_constraintBottom_toBottomOf="@+id/cbHTML"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbAndroid"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/android"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/cbHTML"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:buttonTint="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbIOS"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/ios"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toRightOf="@+id/cbAndroid"
+                app:layout_constraintBottom_toBottomOf="@id/cbAndroid"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:buttonTint="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbFlutter"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/flutter"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cbAndroid"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:buttonTint="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cbJavaScript"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/javascript"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toRightOf="@+id/cbFlutter"
+                app:layout_constraintBottom_toBottomOf="@id/cbFlutter"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:buttonTint="@color/black"/>
+
+            <View
+                android:id="@+id/hlAfterSkillSet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/horizontal_line"
+                app:layout_constraintTop_toBottomOf="@id/cbFlutter"/>
+
+            <TextView
+                android:id="@+id/tvInternedOrNot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/internship"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/hlAfterSkillSet"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp"/>
+
+            <ToggleButton
+                android:id="@+id/tbInternedOrNot"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:textOn="@string/yes"
+                android:textOff="@string/no"
+                app:layout_constraintTop_toBottomOf="@id/tvInternedOrNot"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <View
+                android:id="@+id/hlAfterToggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/horizontal_line"
+                app:layout_constraintTop_toBottomOf="@id/tbInternedOrNot"/>
+
+            <TextView
+                android:id="@+id/tvDescriptionOfEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/describe"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/hlAfterToggleButton"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/etDescriptionOfEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionOfEmployee"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/text_field_background"
+                android:hint="@string/enter_your_text_here"
+                android:textColorHint="@color/hint_color"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_15sdp"
+                android:gravity="top"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/tvSubmitPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_with_high_priority"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/etDescriptionOfEmployee"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swSubmitPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/etDescriptionOfEmployee"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/swSubmitPriority"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/stroke_button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

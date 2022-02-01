@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_widgets.RippleEffectActivity"
+    android:background="@drawable/home_background">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRippleWithBorder"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:text="@string/ripple_with_border"
+        android:textColor="@color/black"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRippleWithoutBorder"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRippleWithBorder"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/ripple_without_border"
+        android:textColor="@color/black"
+        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCustomRippleWithBorder"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRippleWithoutBorder"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/custom_ripple_with_border"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_bordered_ripple"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCustomRippleWithoutBorder"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/btnCustomRippleWithBorder"
+        android:text="@string/custom_ripple_without_border"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_borderless_ripple"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

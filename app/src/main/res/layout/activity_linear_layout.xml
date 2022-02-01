@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui_layout.LinearLayoutActivity"
+    android:background="@drawable/feedback_form_background"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp">
+
+    <TextView
+        android:id="@+id/tvFeedbackTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/feedback_form"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/text_field_background"
+        android:hint="@string/your_name"
+        android:inputType="text"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/_13ssp"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/text_field_background"
+        android:hint="@string/your_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/_13ssp"
+        android:importantForAutofill="no"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_6sdp">
+
+        <TextView
+            android:id="@+id/tvOverallFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:text="@string/overall"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_13ssp"/>
+
+        <Spinner
+            android:id="@+id/spnFeedbackType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/text_field_background"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/ivDropDown"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="-30dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:contentDescription="@string/drop_down_logo"
+            android:src="@drawable/ic_drop_down_arrow"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etDetailedFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/text_field_background"
+        android:gravity="top"
+        android:hint="@string/provide_detailed_feedback_here"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/_13ssp"
+        android:importantForAutofill="no"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbEmailPreferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:button="@drawable/custom_checkbox"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/tvCheckBoxText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/would_you_like_an_email_response"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmitFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/submit"
+        android:background="@drawable/stroke_button"/>
+
+</LinearLayout>
