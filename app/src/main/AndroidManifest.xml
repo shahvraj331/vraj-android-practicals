@@ -14,10 +14,22 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui_widgets.EmployeeDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_widgets.RippleEffectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_widgets.RegistrationFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_widgets.HomeScreenActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
     </application>
 
 </manifest>
