@@ -10,14 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinBasics">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".ui_layout.FrameLayoutActivity"
             android:exported="false" />
         <activity
@@ -38,6 +30,17 @@
         <activity
             android:name=".ui_layout.FeedbackFormActivity"
             android:exported="false" />
+        <activity
+            android:name=".activity_intent_fragment.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".recyclerview_and_adapters.activity.BottomNavViewPagerActivity"
             android:exported="false" />
