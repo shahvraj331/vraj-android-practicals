@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlinbasics.databinding.ActivityMainBinding
 import com.example.kotlinbasics.ui_widgets.HomeScreenActivity
+import com.example.kotlinbasics.ui_layout.LayoutsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnUIWidgets.setOnClickListener {
             val uiWidgetsActivity = Intent(this@MainActivity, HomeScreenActivity::class.java)
             startActivity(uiWidgetsActivity)
+        }
+
+        binding.btnUILayouts.setOnClickListener {
+            val uiLayoutsActivity = Intent(this@MainActivity, LayoutsActivity::class.java)
+            startActivity(uiLayoutsActivity)
         }
     }
 }

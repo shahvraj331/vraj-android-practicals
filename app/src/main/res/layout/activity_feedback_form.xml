@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clFeedbackForm"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feedback_form_background"
+    tools:context=".ui_layout.FeedbackFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glHorizontalBegin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="@dimen/_5sdp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glHorizontalEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="@dimen/_5sdp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glVerticalBegin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_10sdp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glVerticalEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/tvFeedbackTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="@string/feedback_form"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+                app:layout_constraintRight_toRightOf="@+id/glVerticalEnd"
+                app:layout_constraintTop_toTopOf="@id/glHorizontalBegin"/>
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/text_field_background"
+                android:hint="@string/your_name"
+                android:inputType="text"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/_13ssp"
+                android:importantForAutofill="no"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+                app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+                app:layout_constraintTop_toBottomOf="@id/tvFeedbackTitle"/>
+
+            <EditText
+                android:id="@+id/etUserEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/text_field_background"
+                android:hint="@string/your_email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/_13ssp"
+                android:importantForAutofill="no"
+                app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+                app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+                app:layout_constraintTop_toBottomOf="@id/etUserName"/>
+
+            <TextView
+                android:id="@+id/tvOverallFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/overall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+                app:layout_constraintTop_toBottomOf="@id/etUserEmail"/>
+
+            <Spinner
+                android:id="@+id/spnFeedbackType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/text_field_background"
+                android:gravity="center"
+                app:layout_constraintLeft_toRightOf="@+id/tvOverallFeedback"
+                app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+                app:layout_constraintTop_toBottomOf="@id/etUserEmail"/>
+
+            <ImageView
+                android:id="@+id/ivDropDown"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/drop_down_logo"
+                android:src="@drawable/ic_drop_down_arrow"
+                app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+                app:layout_constraintTop_toBottomOf="@id/etUserEmail"/>
+
+            <EditText
+                android:id="@+id/etDetailedFeedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/text_field_background"
+                android:gravity="top"
+                android:hint="@string/provide_detailed_feedback_here"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/_13ssp"
+                android:importantForAutofill="no"
+                app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+                app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+                app:layout_constraintTop_toBottomOf="@id/tvOverallFeedback"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbEmailPreferences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:button="@drawable/custom_checkbox"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+                app:layout_constraintTop_toBottomOf="@id/etDetailedFeedback"/>
+
+            <TextView
+                android:id="@+id/tvCheckBoxText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/would_you_like_an_email_response"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintLeft_toRightOf="@+id/cbEmailPreferences"
+                app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+                app:layout_constraintTop_toTopOf="@+id/cbEmailPreferences"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmitFeedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/submit"
+                android:background="@drawable/stroke_button"
+                app:layout_constraintLeft_toLeftOf="@id/glVerticalBegin"
+                app:layout_constraintRight_toRightOf="@id/glVerticalEnd"
+                app:layout_constraintTop_toBottomOf="@id/tvCheckBoxText"
+                app:layout_constraintBottom_toTopOf="@+id/glHorizontalEnd"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

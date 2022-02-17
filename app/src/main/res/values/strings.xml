@@ -37,9 +37,9 @@
     <string name="skills_array">SkillsArray</string>
     <string name="next_line">\n</string>
     <string name="details_title">Submitted Details</string>
-    <string name="linear_layout">Linear Layout</string>
+    <string name="linear_layout">Linear layout</string>
     <string name="button">Button</string>
-    <string name="relative_layout">Relative Layout</string>
+    <string name="relative_layout">Relative layout</string>
     <string name="enter_email">Enter Email</string>
     <string name="password">Enter Password</string>
     <string name="enter_proper_email">Enter proper email!</string>
@@ -64,5 +64,37 @@
     <string name="high">High</string>
     <string name="normal">Normal</string>
     <string name="enter_your_text_here">Enter your text here</string>
+    <string name="feedback_form">Feedback Form</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="provide_detailed_feedback_here">Provide detailed feedback here</string>
+    <string name="would_you_like_an_email_response">Would you like an email response?</string>
+    <string name="selected_item">%1$s selected  😊</string>
+    <string name="drop_down_logo">drop_down_logo</string>
+    <string name="overall">Overall:</string>
+    <string name="feedback_title">UI Widgets Practical</string>
+    <string name="username_validation">Enter valid name</string>
+    <string name="email_validation">Enter proper email address</string>
+    <string name="spinner_validation">Select proper feedback type</string>
+    <string name="detailed_feedback_validation">Enter detailed feedback</string>
+    <string name="detailed_feedback_limit_validation">Detailed feedback must have atleast 10 characters</string>
+    <string name="ui_layouts">UI Layouts</string>
+    <string name="layouts_activity_title">Different Layouts</string>
+    <string name="constraint_layout">Constraint layout</string>
+    <string name="table_layout">Table layout</string>
+    <string name="frame_layout">Frame layout</string>
+    <string name="overall_feedback_type">Overall feedback type:</string>
+    <string name="detailed_feedback_label">Detailed feedback:</string>
+    <string name="get_email_response">Get email response:</string>
+    <string name="data_activity_title">Submitted feedback details</string>
     <string name="ripple_title">Buttons with ripple effect</string>
+
+    <string-array name="feedback_type">
+        <item>Select Feedback Type</item>
+        <item>Okay</item>
+        <item>Average</item>
+        <item>Good</item>
+        <item>Better</item>
+        <item>Best</item>
+    </string-array>
 </resources>

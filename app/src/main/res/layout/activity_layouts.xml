@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_layout.LayoutsActivity"
+    android:background="@drawable/feedback_form_background">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConstraintLayout"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/constraint_layout"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="@drawable/colored_round_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLinearLayout"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_layout"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConstraintLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/colored_round_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRelativeLayout"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/relative_layout"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLinearLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/colored_round_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTableLayout"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/table_layout"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRelativeLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/colored_round_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFrameLayout"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/frame_layout"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTableLayout"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/colored_round_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

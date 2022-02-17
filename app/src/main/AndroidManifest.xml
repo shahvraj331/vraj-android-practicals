@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinBasics">
         <activity
+            android:name=".ui_layout.FrameLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_layout.TableLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_layout.RelativeLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_layout.LinearLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_layout.ShowDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_layout.LayoutsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui_layout.FeedbackFormActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
