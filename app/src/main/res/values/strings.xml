@@ -37,9 +37,9 @@
     <string name="skills_array">SkillsArray</string>
     <string name="next_line">\n</string>
     <string name="details_title">Submitted Details</string>
-    <string name="linear_layout">Linear layout</string>
+    <string name="linear_layout">Linear Layout</string>
     <string name="button">Button</string>
-    <string name="relative_layout">Relative layout</string>
+    <string name="relative_layout">Relative Layout</string>
     <string name="enter_email">Enter Email</string>
     <string name="password">Enter Password</string>
     <string name="enter_proper_email">Enter proper email!</string>
@@ -183,5 +183,19 @@
     <string name="popcorn">Popcorn</string>
     <string name="strawberry">Strawberry</string>
     <string name="taco">Taco</string>
+    <string name="intent_and_fragments">Intent and Fragments</string>
+    <string name="gallery">Gallery</string>
+    <string name="first_user">First User</string>
+    <string name="second_user">Second User</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_image">Add Image</string>
+    <string name="camera">Camera</string>
+    <string name="intent_data_keyword">data</string>
+    <string name="image_name">IMG_CAM</string>
+    <string name="send">SEND</string>
+    <string name="enter_message">Enter message</string>
+    <string name="prefix_first">"First user: "</string>
+    <string name="prefix_second">"Second user: "</string>
+    <string name="jetpack_navigation_component">JetPack Navigation component</string>
 
 </resources>

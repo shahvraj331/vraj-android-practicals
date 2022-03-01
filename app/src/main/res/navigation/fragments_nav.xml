@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragments_nav"
+    app:startDestination="@id/galleryFragment">
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.kotlinbasics.activity_intent_fragment.fragment.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/firstUserFragment"
+        android:name="com.example.kotlinbasics.activity_intent_fragment.fragment.FirstUserFragment"
+        android:label="fragment_first_user"
+        tools:layout="@layout/fragment_first_user">
+        <action
+            android:id="@+id/goToSecondUserFragment"
+            app:destination="@id/secondUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondUserFragment"
+        android:name="com.example.kotlinbasics.activity_intent_fragment.fragment.SecondUserFragment"
+        android:label="fragment_second_user"
+        tools:layout="@layout/fragment_second_user">
+        <action
+            android:id="@+id/goToFirstUserFragment"
+            app:destination="@id/firstUserFragment" />
+        <argument
+            android:name="newMessage"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+</navigation>

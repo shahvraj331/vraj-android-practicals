@@ -3,6 +3,7 @@ package com.example.kotlinbasics
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kotlinbasics.activity_intent_fragment.activity.MainActivity
 import com.example.kotlinbasics.databinding.ActivityMainBinding
 import com.example.kotlinbasics.recyclerview_and_adapters.activity.DifferentViewsHomeScreenActivity
 import com.example.kotlinbasics.ui_widgets.HomeScreenActivity
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnRecyclerViewAndAdapters.setOnClickListener {
             val recyclerViewActivity = Intent(this@MainActivity, DifferentViewsHomeScreenActivity::class.java)
             startActivity(recyclerViewActivity)
+        }
+
+        binding.btnIntAndFrag.setOnClickListener {
+            val uiWidgetsActivity = Intent(this@MainActivity, MainActivity::class.java)
+            startActivity(uiWidgetsActivity)
         }
     }
 }
