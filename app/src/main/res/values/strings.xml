@@ -197,5 +197,41 @@
     <string name="prefix_first">"First user: "</string>
     <string name="prefix_second">"Second user: "</string>
     <string name="jetpack_navigation_component">JetPack Navigation component</string>
+    <string name="scrollview_and_webview">ScrollView and WebView</string>
+    <string name="scrollview">ScrollView</string>
+    <string name="webview">WebView</string>
+    <string name="searchview">SearchView</string>
+    <string name="vertical_recyclerview">Vertical Recyclerview</string>
+    <string name="horizontal_recyclerview">Horizontal RecyclerView</string>
+    <string name="random_text">
+          Humans are coming closer to the internet at a very fast rate. It means that the
+          volume of data Industries is gathering will increase as time passes because of
+          more users. Industry’s are gradually analyzing the need for this useful information
+          they are getting from their users. It is for sure that the data always tends to
+          an increasing pattern so the company’s are eventually acquiring professionals
+          skilled with Big Data Technologies. According to NASSCOM, India’s Big Data
+          Market will reach 16 billion USD by 2025 from 2 billion USD. The growth of smart
+          devices in India is growing at a very huge rate that will cause growth in the
+          Big Data Market. Since Big Data is growing the demand for Big Data professionals
+          will be high.  Hadoop provides personalized recommendations and personalizes ad targeting
+          features. Companies are generating thousands of petabytes of data every day so the
+          demand for Big Data professionals is very high. Even after a few years,
+          Hadoop will be considered as the must-learn skill for the data-scientist
+          and Big Data Technology. Companies are investing big in it and it will become
+          an in-demand skill in the future.
+    </string>
+    <string name="add_item">Add Item</string>
+    <string name="clear">Clear</string>
+    <string name="selected_items">Selected items:</string>
+    <string name="load_pdf">Load PDF</string>
+    <string name="google_url">https://www.google.com</string>
+    <string name="pdf_url">https://www.ets.org/Media/Tests/GRE/pdf/gre_research_validity_data.pdf</string>
+    <string name="pdf_embed_url">https://docs.google.com/gview?embedded=true&amp;url=%1$s</string>
+    <string name="http">https://</string>
+    <string name="com">.com</string>
+    <string name="www">www.</string>
+    <string name="http_prefix_url">https://%1$s</string>
+    <string name="google_search_url">https://www.google.com/search?q=%1$s</string>
+    <string name="tab_space">\t</string>
 
 </resources>
