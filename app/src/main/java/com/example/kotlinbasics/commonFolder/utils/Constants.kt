@@ -10,4 +10,7 @@ object Constants {
     const val DATA_TO_SEND = "Employee data"
     const val FEEDBACK_DATA_KEY = "Feedback data"
     const val MENU_SHARED_PREF_KEY = "menu_shared_preferences_key"
+    const val REQ_RES_BASE_URL = "https://reqres.in/"
+    const val LOGIN_URL = "https://reqres.in/api/login"
+    const val DELAY_RESPONSE_URL = "https://reqres.in/api/users?delay=3"
 }
