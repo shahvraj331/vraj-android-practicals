@@ -28,7 +28,7 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:text="@string/name_and_first_appearance"
         android:textColor="@color/black"
-        android:textSize="@dimen/_18ssp"
+        android:textSize="@dimen/_16ssp"
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/ivMovieImage"
         app:layout_constraintRight_toRightOf="parent"

@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.kotlinbasics.activity_intent_fragment.activity.MainActivity
 import com.example.kotlinbasics.databinding.ActivityMainBinding
 import com.example.kotlinbasics.recyclerview_and_adapters.activity.DifferentViewsHomeScreenActivity
+import com.example.kotlinbasics.scrollview_and_webview.activity.ScrollViewAndWebViewActivity
 import com.example.kotlinbasics.ui_widgets.HomeScreenActivity
 import com.example.kotlinbasics.ui_layout.LayoutsActivity
 
@@ -22,23 +23,28 @@ class MainActivity : AppCompatActivity() {
         actionBar?.title = getString(R.string.vraj_android_practicals)
 
         binding.btnUIWidgets.setOnClickListener {
-            val uiWidgetsActivity = Intent(this@MainActivity, HomeScreenActivity::class.java)
-            startActivity(uiWidgetsActivity)
+            intentTo(HomeScreenActivity::class.java)
         }
 
         binding.btnUILayouts.setOnClickListener {
-            val uiLayoutsActivity = Intent(this@MainActivity, LayoutsActivity::class.java)
-            startActivity(uiLayoutsActivity)
+            intentTo(LayoutsActivity::class.java)
         }
 
         binding.btnRecyclerViewAndAdapters.setOnClickListener {
-            val recyclerViewActivity = Intent(this@MainActivity, DifferentViewsHomeScreenActivity::class.java)
-            startActivity(recyclerViewActivity)
+            intentTo(DifferentViewsHomeScreenActivity::class.java)
         }
 
         binding.btnIntAndFrag.setOnClickListener {
-            val uiWidgetsActivity = Intent(this@MainActivity, MainActivity::class.java)
-            startActivity(uiWidgetsActivity)
+            intentTo(MainActivity::class.java)
+        }
+
+        binding.btnScrollViewWebView.setOnClickListener {
+            intentTo(ScrollViewAndWebViewActivity::class.java)
         }
     }
+
+    private fun intentTo(destinationActivity: Class<*>) {
+        startActivity(Intent(this@MainActivity, destinationActivity))
+    }
+
 }
