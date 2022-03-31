@@ -233,5 +233,27 @@
     <string name="http_prefix_url">https://%1$s</string>
     <string name="google_search_url">https://www.google.com/search?q=%1$s</string>
     <string name="tab_space">\t</string>
+    <string name="login">Login</string>
+    <string name="web_services">Web Services</string>
+    <string name="login_successful">Login successful</string>
+    <string name="login_unsuccessful">Login failed</string>
+    <string name="list_of_users">List of users:</string>
+    <string name="list_of_users_title">List of users</string>
+    <string name="add_user">ADD USER</string>
+    <string name="selected_user">Selected user</string>
+    <string name="single_user_first_name">FirstName: %1$s</string>
+    <string name="single_user_last_name">LastName: %1$s</string>
+    <string name="single_user_email">Email: %1$s</string>
+    <string name="single_user_id">ID: %1$s</string>
+    <string name="name_label">Name</string>
+    <string name="job">Job</string>
+    <string name="enter_proper_credentials">Enter proper credentials</string>
+    <string name="user_created">Created user: %1$s</string>
+    <string name="valid_email">eve.holt@reqres.in</string>
+    <string name="valid_password">cityslicka</string>
+    <string name="email_text">email</string>
+    <string name="password_text">password</string>
+    <string name="post_method">POST</string>
+    <string name="get_method">GET</string>
 
 </resources>

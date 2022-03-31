@@ -9,6 +9,7 @@ import com.example.kotlinbasics.recyclerview_and_adapters.activity.DifferentView
 import com.example.kotlinbasics.scrollview_and_webview.activity.ScrollViewAndWebViewActivity
 import com.example.kotlinbasics.ui_widgets.HomeScreenActivity
 import com.example.kotlinbasics.ui_layout.LayoutsActivity
+import com.example.kotlinbasics.web_services.activity.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,6 +41,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnScrollViewWebView.setOnClickListener {
             intentTo(ScrollViewAndWebViewActivity::class.java)
+        }
+
+        binding.btnWebService.setOnClickListener {
+            val webServicesActivity = Intent(this@MainActivity, LoginActivity::class.java)
+            startActivity(webServicesActivity)
         }
     }
 
