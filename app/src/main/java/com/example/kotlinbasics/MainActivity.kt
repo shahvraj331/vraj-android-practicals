@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlinbasics.activity_intent_fragment.activity.MainActivity
+import com.example.kotlinbasics.android_permissions.PermissionsActivity
 import com.example.kotlinbasics.android_architecture.AndroidArchitectureBaseScreen
 import com.example.kotlinbasics.databinding.ActivityMainBinding
 import com.example.kotlinbasics.recyclerview_and_adapters.activity.DifferentViewsHomeScreenActivity
@@ -45,8 +46,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnWebService.setOnClickListener {
-            val webServicesActivity = Intent(this@MainActivity, LoginActivity::class.java)
-            startActivity(webServicesActivity)
+            intentTo(LoginActivity::class.java)
+        }
+
+        binding.btnPermissions.setOnClickListener {
+            intentTo(PermissionsActivity::class.java)
         }
 
         binding.btnAndroidArchitecture.setOnClickListener {

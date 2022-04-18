@@ -22,4 +22,5 @@
     <color name="blue_start">#2193B0</color>
     <color name="blue_end">#6DD5ED</color>
     <color name="gray">#757575</color>
+    <color name="blue_button_background">#002FD8</color>
 </resources>

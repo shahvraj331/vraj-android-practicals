@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.KotlinBasics" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.KotlinBasics" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="permissions_button" parent="Widget.AppCompat.Button">
+        <item name="background">@drawable/blue_button</item>
+        <item name="textFillColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="layout_constraintWidth_percent">0.4</item>
+    </style>
+
 </resources>
