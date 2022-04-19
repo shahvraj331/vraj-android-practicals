@@ -9,16 +9,14 @@ import androidx.lifecycle.lifecycleScope
 import com.example.kotlinbasics.R
 import com.example.kotlinbasics.databinding.ActivitySingleUserBinding
 import com.example.kotlinbasics.web_services.data_classes.SingleUserData
+import com.example.kotlinbasics.web_services.interfaces.ApiCallbackListener
 import com.example.kotlinbasics.web_services.interfaces.ApiInterface
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import java.net.URL
 
-class SingleUserActivity : AppCompatActivity() {
+class SingleUserActivity : AppCompatActivity(), ApiCallbackListener {
 
     private lateinit var binding: ActivitySingleUserBinding
 
@@ -36,23 +34,7 @@ class SingleUserActivity : AppCompatActivity() {
     }
 
     private fun getSelectedUserData(userID: Int) {
-        val retrofitData = ApiInterface.getRetrofitObject().create(ApiInterface::class.java).getData(userID)
-
-        retrofitData.enqueue(object : Callback<SingleUserData> {
-            override fun onResponse(call: Call<SingleUserData?>, response: Response<SingleUserData?>) {
-                response.body()?.let {
-                    lifecycleScope.launch(Dispatchers.IO) {
-                        val url = URL(it.data.avatar)
-                        val image = BitmapFactory.decodeStream(url.openConnection().getInputStream())
-                        withContext(Dispatchers.Main) {
-                            updateUI(it, image)
-                        }
-                    }
-                }
-            }
-
-            override fun onFailure(call: Call<SingleUserData?>, t: Throwable) { }
-        })
+        ApiInterface.getSingleUserData(userID, this@SingleUserActivity)
     }
 
     private fun updateUI(data: SingleUserData, image: Bitmap) {
@@ -66,5 +48,20 @@ class SingleUserActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         finish()
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun<T: Any> onSuccess(data: T) {
+        val responseData = data as SingleUserData
+        lifecycleScope.launch(Dispatchers.IO) {
+            val url = URL(responseData.data.avatar)
+            val image = BitmapFactory.decodeStream(url.openConnection().getInputStream())
+            withContext(Dispatchers.Main) {
+                updateUI(responseData, image)
+            }
+        }
+    }
+
+    override fun onFailure() {
+
     }
 }

@@ -8,6 +8,8 @@ import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.Body
@@ -43,6 +45,23 @@ interface ApiInterface {
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
+        }
+
+        fun getSingleUserData(userID: Int, apiCallbackListener: ApiCallbackListener) {
+            val retrofitData = getRetrofitObject().create(ApiInterface::class.java).getData(userID)
+            request(retrofitData, apiCallbackListener)
+        }
+
+        private fun <T: Any> request(retrofitCall: Call<T>, apiCallbackListener: ApiCallbackListener) {
+            retrofitCall.enqueue(object : Callback<T> {
+                override fun onResponse(call: Call<T>, response: Response<T>) {
+                    response.body()?.let {
+                        apiCallbackListener.onSuccess(it)
+                    }
+                }
+
+                override fun onFailure(call: Call<T>, t: Throwable) { }
+            })
         }
     }
 }
