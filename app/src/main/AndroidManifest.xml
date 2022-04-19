@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinBasics">
         <activity
+            android:name=".design_support_library.CoordinatorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".design_support_library.DesignSupportLibraryActivity"
+            android:exported="false" />
+        <activity
             android:name=".scrollview_and_webview.activity.ScrollViewActivity"
             android:exported="false" />
         <activity

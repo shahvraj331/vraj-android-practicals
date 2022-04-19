@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/section_1">
+        <menu>
+            <item
+                android:id="@+id/textInputLayout"
+                android:title="@string/textInputLayout" />
+
+            <item
+                android:id="@+id/coordinatorLayout"
+                android:title="@string/coordinator_layout" />
+
+            <item
+                android:id="@+id/exit"
+                android:title="@string/exit" />
+        </menu>
+    </item>
+    <item android:title="@string/section_2">
+        <menu>
+            <item
+                android:id="@+id/firstUserFragment"
+                android:title="@string/first_user" />
+
+            <item
+                android:id="@+id/secondUserFragment"
+                android:title="@string/second_user" />
+
+            <item
+                android:id="@+id/galleryFragment"
+                android:title="@string/gallery" />
+        </menu>
+    </item>
+</menu>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlinbasics.activity_intent_fragment.activity.MainActivity
 import com.example.kotlinbasics.databinding.ActivityMainBinding
+import com.example.kotlinbasics.design_support_library.DesignSupportLibraryActivity
 import com.example.kotlinbasics.recyclerview_and_adapters.activity.DifferentViewsHomeScreenActivity
 import com.example.kotlinbasics.scrollview_and_webview.activity.ScrollViewAndWebViewActivity
 import com.example.kotlinbasics.ui_widgets.HomeScreenActivity
@@ -46,6 +47,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnWebService.setOnClickListener {
             val webServicesActivity = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(webServicesActivity)
+        }
+
+        binding.btnDesign.setOnClickListener {
+            intentTo(DesignSupportLibraryActivity::class.java)
         }
     }
 

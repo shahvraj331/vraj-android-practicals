@@ -255,5 +255,21 @@
     <string name="password_text">password</string>
     <string name="post_method">POST</string>
     <string name="get_method">GET</string>
+    <string name="design_support_library">Design Support Library</string>
+    <string name="coordinator_layout">Coordinator Layout</string>
+    <string name="toastMessage">toastMessage</string>
+    <string name="default_textInputLayout">Default TextInputLayout</string>
+    <string name="filled_textInputLayout">Filled TextInputLayout</string>
+    <string name="outline_textInputLayout">Outline TextInputLayout</string>
+    <string name="enter_five_chars">Enter five chars</string>
+    <string name="open_snackbar">open_snackbar</string>
+    <string name="textInputLayout">TextInputLayout</string>
+    <string name="exit">Exit</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="header">HEADER</string>
+    <string name="welcome_user">Welcome user</string>
+    <string name="section_1">Section-1</string>
+    <string name="section_2">Section-2</string>
 
 </resources>
