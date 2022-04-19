@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinBasics">
         <activity
+            android:name=".android_architecture.mvvm_architecture.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".android_architecture.mvc_architecture.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".android_architecture.AndroidArchitectureBaseScreen"
+            android:exported="false" />
+        <activity
+            android:name=".android_architecture.mvp_architecture.CounterActivity"
+            android:exported="false" />
+        <activity
             android:name=".scrollview_and_webview.activity.ScrollViewActivity"
             android:exported="false" />
         <activity

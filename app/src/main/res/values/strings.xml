@@ -255,5 +255,21 @@
     <string name="password_text">password</string>
     <string name="post_method">POST</string>
     <string name="get_method">GET</string>
+    <string name="increase">Inc.</string>
+    <string name="decrease">Dec.</string>
+    <string name="_0">0</string>
+    <string name="android_architecture">Android Architecture</string>
+    <string name="mvp_architecture">MVP Architecture</string>
+    <string name="value_increased">Value incremented</string>
+    <string name="value_decreased">Value decremented</string>
+    <string name="login_title">Login</string>
+    <string name="login_success">Login success</string>
+    <string name="login_failure">Login failure</string>
+    <string name="mvc_architecture">MVC Architecture</string>
+    <string name="mvvm_architecture">MVVM Architecture</string>
+    <string name="email_verification">Email verification</string>
+    <string name="verify">Verify</string>
+    <string name="valid_email_text">Email valid</string>
+    <string name="invalid_email_text">Email invalid</string>
 
 </resources>
