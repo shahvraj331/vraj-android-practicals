@@ -3,6 +3,10 @@
     package="com.example.kotlinbasics">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinBasics">
+        <activity
+            android:name=".android_permissions.PermissionsActivity"
+            android:exported="false" />
         <activity
             android:name=".android_architecture.mvvm_architecture.ChatActivity"
             android:exported="false" />
